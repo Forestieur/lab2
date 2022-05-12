@@ -26,7 +26,7 @@ class StartPage extends StatelessWidget {
         title: const Text('Select board size'),
       ),
       body: Column(children: [
-        for (var n in [4, 5, 6, 7, 8, 9, 10, 15])
+        for (var n in [4, 5, 6, 7, 8, 9, 10, 14])
           Center(
               child: TextButton(
             child: Text('Size = $n'),
@@ -75,8 +75,8 @@ class ResPage extends StatelessWidget {
               children: List.generate(
                   _n,
                   (k) => Center(
-                      heightFactor: 2,
-                      widthFactor: 2,
+                      heightFactor: 1.5,
+                      widthFactor: 1.5,
                       child: Icon(
                         y[k] == 1 ? Icons.star : Icons.star_border,
                         color: (oneSol.indexOf(y) + k) % 2 == 0

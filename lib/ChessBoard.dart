@@ -124,6 +124,7 @@ class ChessBoard {
               }
             }
             count++;
+            print(count);
           }
         }
         Recursion(row + 1);
